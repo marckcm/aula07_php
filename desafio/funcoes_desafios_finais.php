@@ -1,7 +1,11 @@
 <?php
 // Função para verificar aceitação do desafio 1
 function verificarAceitacao($nome, $sexo, $idade) {
-   //código aqui
+      if ($sexo == "masculino" && $idade == 18){
+      return $nome . " Alistamento obrigatório";
+   } else {
+      return $nome . " Facultativo, Dispensado ou Prestado";
+   }
 }
 
 // Função para ordenar números do desafio 2
