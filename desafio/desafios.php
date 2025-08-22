@@ -4,48 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafios PHP</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        h2 {
-            margin-top: 0;
-        }
-        form {
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"], input[type="number"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-        }
-        input[type="submit"] {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-        .resultado {
-            margin-top: 20px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 3px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -95,7 +54,7 @@
         }
         ?>
 
-        <!-- Desafio 2 -->
+<!-- Desafio 2 -->
         <h3>Desafio 2:</h3>
         <form method="post">
             <label for="numero1">Número 1:</label>
@@ -110,7 +69,7 @@
             <input type="submit" value="Ordenar Números">
         </form>
 
-        <!-- Desafio 3 -->
+<!-- Desafio 3 -->
         <?php
         // Desafio 3 - Calcular média
         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nota1']) && isset($_POST['nota2']) && isset($_POST['nota3'])) {
